@@ -11,11 +11,14 @@ end
  def create
  	@item = FoodItem.find(params[:food_item_id])
  	@order = @item.orders.build order_params
+ 	redirect_to 
  end
 
  def order_params
  	params.require(:order).permit(:quantity)
+ end
  
+ def update
 	if @order.save
 		flash[:success] = "Thank you for your order."
 		redirect_to menu_path, flash: {success: "Thank you for your order."}

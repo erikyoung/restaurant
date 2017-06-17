@@ -2,8 +2,9 @@ Rails.application.routes.draw do
 
  
 
-  resources :food_items
+  resources :food_items 
   resources :orders
+
   get 'home/index'
 
   get 'menu' => 'home#menu'
