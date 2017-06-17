@@ -20,5 +20,10 @@
   <%= @food_item.section %>
 </p>
 
+<p>
+	<strong>Image:</strong>
+	<%= @food_item.image_url %>
+</p>
+
 <%= link_to 'Edit', edit_food_item_path(@food_item) %> |
 <%= link_to 'Back', food_items_path %>

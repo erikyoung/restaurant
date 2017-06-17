@@ -33,6 +33,11 @@
     <%= f.select :section_id, Section.all.map{|e| [e.name, e.id]}, {}, class: 'form-control' %>
   </div>
 
+  <div class="field">
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url %>
+  </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>
