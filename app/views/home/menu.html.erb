@@ -1,10 +1,11 @@
-<h1>Yo Dude!</h1>
+<div class="container">
+<h1>Have a look at our menu</h1>
 
 <div id="navbarSupportedContent">
   <form class="form" align="right">
     <%= form_tag(menu_path, :method => "get", id: "search-form") do %>
         <%= text_field_tag :search, params[:search], placeholder: "Search food" %>
-        <%= submit_tag "Search", :name => nil %>
+        <%= submit_tag "Search", :name => nil, :style => "color:blue;"  %>
     <% end %>
   </form>
 </div>
@@ -32,19 +33,18 @@
 <div class="food-items col-xs-10 col-xs-offset-1">
 <% if @all_food_items.present? %>
 	<table class="table">
-		<tbody>
+		
 			<% @all_food_items.each do |item| %>
 			<tr>
-				<td><%= link_to item.name %></td>
+				<td><%= link_to item.name, food_item_path(item.id) %></td>
 				<td><%= number_to_currency item.price %></td>
 				<td><%= item.description %></td>
 				<td><%= link_to "Add to order", new_order_path(food_item_id: item.id) %> 
 				<td><%= image_tag item.image_url_or_default, :size => "200x150" %></td> 
 			</tr>
 		<% end %>
-	</tbody>
+		</div>
   </table>
-  <% else %>
-  	<div class="alert alert-info">Please select a section</div>
 <% end %>
 </div>
+

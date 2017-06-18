@@ -14,6 +14,6 @@ class FoodItem < ApplicationRecord
 end
 
 	def self.search(search)
-		where("title || body ILIKE ?", "%#{search}%")
+		where("name ILIKE ?", "%#{search}%")
 	end
 end

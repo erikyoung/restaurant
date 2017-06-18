@@ -1,29 +1,25 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @food_item.name %>
-</p>
+<div class="booyah-box col-xs-10 col-xs-offset-1">
+  <h1><%= @food_item.name %></h1>
+  <i><%= @food_item.description %></i>
+  <br/><br/>
+  <p><%= @food_item.price %></p>
+  <p><%= image_tag @food_item.image_url, :size => "320x240" %></p>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @food_item.description %>
-</p>
+  
 
-<p>
-  <strong>Price:</strong>
-  <%= @food_item.price %>
-</p>
 
-<p>
-  <strong>Section:</strong>
-  <%= @food_item.section %>
-</p>
 
-<p>
-	<strong>Image:</strong>
-	<%= @food_item.image_url %>
-</p>
+  
 
-<%= link_to 'Edit', edit_food_item_path(@food_item) %> |
-<%= link_to 'Back', food_items_path %>
+
+
+  
+
+
+
+  
+
+

@@ -44,8 +44,9 @@ class FoodItemsController < ApplicationController
   def update
     respond_to do |format|
       if @food_item.update(food_item_params)
-        format.html { redirect_to @food_item, notice: 'Food item was successfully updated.' }
+        format.html { redirect_to menu_path, notice: 'Food item was successfully updated.' }
         format.json { render :show, status: :ok, location: @food_item }
+
       else
         format.html { render :edit }
         format.json { render json: @food_item.errors, status: :unprocessable_entity }
