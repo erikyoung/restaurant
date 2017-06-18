@@ -9,9 +9,25 @@
   </head>
 
   <body>
-  <%= render 'layouts/navbar' %>
-  	<div class="container">
-    	<%= yield %>
+  <div id="flex-content-container">
+    <%= render 'layouts/navbar' %>
+    	<div class="container">
+      	<%= yield %>
+      </div>
+  </div>
+    <div id="footer">
+      <div class="container">
+        <br />
+        <div class="col-12 col-sm-3">
+        erik.young@rmit.edu.vn
+        <br />
+        One Kendall Square
+        <br />
+        Cambridge MA, 02113
+      </div>
     </div>
+          
+                
+
   </body>
 </html>
