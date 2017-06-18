@@ -2,9 +2,9 @@
 
 **Coder Restaurant** is a Ruby on Rails restaurant website let users order foods.
 
-Submitted by: **Your Name**
+Submitted by: **Erik Young**
 
-Time spent: **XX** hours spent in total
+Time spent: **30** hours spent in total
 
 URL: **heroku-app-url**
 
