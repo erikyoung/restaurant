@@ -13,3 +13,69 @@
   margin-bottom: 35px;
   padding: 20px 20px 20px 20px;
 }
+
+
+
+.frosty {
+  padding: 60px 60px 60px 60px;
+  background:rgba(0,0,0, 0.5);
+  color:black;
+  text-shadow: rgba(0,0,0,0.95) 1px 1px;
+  height: 200px;
+  border: 0px solid #000000;
+
+}
+
+
+
+.col-md-6 {
+width: 100%;
+max-width: 100%;
+width: 400px;
+height: 400px;
+background-color: white; 
+margin-top: 20px;
+
+}
+
+.contact, .map {
+  padding: 20px 20px 20px 20px;
+
+}
+
+  
+
+
+
+.form {
+  margin-top: 20px;
+  margin-left: 675px;
+  padding: 0.5em 10px;
+  padding-bottom: 5px;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  text-align: center;
+  width: 400px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #b4b6ba;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size:26px;
+}
+
+.navbar {
+  background: image_url('wall4.png');
+  box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color:black; 
+}
+
+body {
+  background: image_url('cover.jpg');
+  background-size:100%;
+  font-family: 'IM Fell DW Pica', serif !important;
+}
