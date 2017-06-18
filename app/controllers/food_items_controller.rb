@@ -7,11 +7,7 @@ class FoodItemsController < ApplicationController
     @food_items = FoodItem.all
   end
 
-  if params[:search]
-     @food_items = @food_itmes.search(params[:search])
-   else
-    @food_items = FoodItem.all
-  end
+  
 
   # GET /food_items/1
   # GET /food_items/1.json

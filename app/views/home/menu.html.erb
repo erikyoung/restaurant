@@ -1,5 +1,15 @@
 <h1>Yo Dude!</h1>
 
+<div id="navbarSupportedContent">
+  <form class="form" align="right">
+    <%= form_tag(menu_path, :method => "get", id: "search-form") do %>
+        <%= text_field_tag :search, params[:search], placeholder: "Search food" %>
+        <%= submit_tag "Search", :name => nil %>
+    <% end %>
+  </form>
+</div>
+
+
 
 <div class="btn btn-group">
 	<% @sections.each do |section| %>
@@ -11,6 +21,8 @@
 	<%= form_tag nil, method: 'get' do %>
 	 <%= hidden_field_tag :section, params[:section] %>
 		<div class="form-inline">
+			<div class="form-group">
+				
 			<%= select_tag :sort_column, options_for_select([['Name', 'name'], ['Price', 'price']]), class: 'form-control' %>
 			<%= select_tag :sort_direction, options_for_select([['Ascending', 'asc'], ['Descending', 'dsc']]), class: "form-control" %> <br />
 			<%= submit_tag "sort", class: 'btn btn-primary' %>
@@ -18,16 +30,16 @@
 <% end %>
 </div>
 <div class="food-items col-xs-10 col-xs-offset-1">
-<% if @current_section %>
+<% if @all_food_items.present? %>
 	<table class="table">
 		<tbody>
-			<% @current_section.food_items.each do |item| %>
+			<% @all_food_items.each do |item| %>
 			<tr>
-				<td><%= item.name %></td>
+				<td><%= link_to item.name %></td>
 				<td><%= number_to_currency item.price %></td>
 				<td><%= item.description %></td>
 				<td><%= link_to "Add to order", new_order_path(food_item_id: item.id) %> 
-				<td><%= image_tag item.image_url_or_default %></td> 
+				<td><%= image_tag item.image_url_or_default, :size => "200x150" %></td> 
 			</tr>
 		<% end %>
 	</tbody>
