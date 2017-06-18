@@ -14,6 +14,10 @@
   padding: 20px 20px 20px 20px;
 }
 
+.fa-plus-circle {
+  color: #b4b6ba
+}
+
 
 
 .frosty {
@@ -66,7 +70,10 @@ margin-top: 20px;
 }
 
 .navbar {
-  background: image_url('wall4.png');
+  background-color: #c33764; 
+  background: -webkit-linear-gradient(to right, #c33764, #1d2671); 
+  background: linear-gradient(to right, #c33764, #1d2671); 
+  
   box-shadow: 0px 1px 3px #2a2a2a;
 }
 
