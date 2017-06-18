@@ -66,6 +66,10 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 Describe any challenges encountered while building the app.
 
+*Debugging
+*Still not clear about certain kinds of arguments we pass into paths and why
+
+
 ## License
 
     Copyright [yyyy] [name]
