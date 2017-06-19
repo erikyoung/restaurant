@@ -21,7 +21,7 @@ class OrdersController < ApplicationController
 end
 
  def order_params
- 	params.require(:order).permit(:quantity, :name, :address, :phone)
+ 	params.require(:order).permit(:quantity, :name, :address, :phone, :price)
  end
  
  def update
