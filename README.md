@@ -6,7 +6,7 @@ Submitted by: **Erik Young**
 
 Time spent: **30** hours spent in total
 
-URL: **heroku-app-url**
+URL: **https://restaurant-erik.herokuapp.com/**
 
 ## User Stories
 
